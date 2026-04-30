@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+client/node_modules/
+Server/node_modules/
+
+# Production builds
+dist/
+client/dist/
+Server/dist/
+build/
+client/build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+client/.env
+client/.env.*
+!client/.env.example
+Server/.env
+Server/.env.*
+!Server/.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+client/vite-dev.log
+client/vite-dev.err.log
+
+# Runtime and cache files
+.cache/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
