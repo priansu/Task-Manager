@@ -8,7 +8,10 @@ dotenv.config();
 connectDB(); // Connect to the database
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://task-manager-production-5765.up.railway.app',
+  credentials: true
+}));
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', require('./routes/taskRoutes'));
