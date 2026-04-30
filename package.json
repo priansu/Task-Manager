@@ -11,8 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server/server.js",
-    "install-all": "npm install && cd Server && npm install && cd ../client && npm install"
+    "start": "npm --prefix Server start",
+    "install-all": "npm install && npm --prefix Server install && npm --prefix client install"
   },
   "keywords": [],
   "author": "",
